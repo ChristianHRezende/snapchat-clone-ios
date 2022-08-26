@@ -17,7 +17,7 @@ class MyAlert {
         self.message = message
     }
 
-    func showTitleMessageAlert(viewController:UIViewController){
+    func showTitleMessageAlert(viewController:UIViewController)->Void{
         
         let alertController = UIAlertController(title: self.title, message: self.message, preferredStyle: .alert)
         let actionController = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)

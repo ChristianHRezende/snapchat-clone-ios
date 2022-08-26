@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE187E0F28AC0B99007379EA /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE187E0E28AC0B99007379EA /* UsersTableViewController.swift */; };
+		AE187E1128AC1060007379EA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE187E1028AC1060007379EA /* User.swift */; };
 		AE43393428A5A00B00A777CB /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43393328A5A00B00A777CB /* SnapsViewController.swift */; };
 		AE43393628A67BAA00A777CB /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43393528A67BAA00A777CB /* CameraViewController.swift */; };
 		AE50AC4628A41734008CC83C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE50AC4528A41734008CC83C /* AppDelegate.swift */; };
@@ -22,9 +24,15 @@
 		AE50AC6328A42507008CC83C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE50AC6228A42507008CC83C /* SignInViewController.swift */; };
 		AE50AC6528A42511008CC83C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE50AC6428A42511008CC83C /* SignUpViewController.swift */; };
 		AE50AC6828A52381008CC83C /* MyAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE50AC6728A52381008CC83C /* MyAlert.swift */; };
+		AE5BDCC228B6A5E8007F9B1B /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5BDCC128B6A5E8007F9B1B /* Snap.swift */; };
+		AE5BDCC728B810A5007F9B1B /* SnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5BDCC628B810A5007F9B1B /* SnapViewController.swift */; };
+		AE5BDCCA28B8EB01007F9B1B /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = AE5BDCC928B8EB01007F9B1B /* SDWebImage */; };
+		AE5BDCCC28B8EB01007F9B1B /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AE5BDCCB28B8EB01007F9B1B /* SDWebImageMapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE187E0E28AC0B99007379EA /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
+		AE187E1028AC1060007379EA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AE43393328A5A00B00A777CB /* SnapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
 		AE43393528A67BAA00A777CB /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		AE50AC4228A41734008CC83C /* SnapchatClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapchatClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +48,8 @@
 		AE50AC6428A42511008CC83C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		AE50AC6628A4331D008CC83C /* SnapchatClone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SnapchatClone.entitlements; sourceTree = "<group>"; };
 		AE50AC6728A52381008CC83C /* MyAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAlert.swift; sourceTree = "<group>"; };
+		AE5BDCC128B6A5E8007F9B1B /* Snap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Snap.swift; path = SnapchatClone/ViewControllers/Snap.swift; sourceTree = SOURCE_ROOT; };
+		AE5BDCC628B810A5007F9B1B /* SnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +58,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE50AC5F28A4182D008CC83C /* FirebaseDatabase in Frameworks */,
+				AE5BDCCC28B8EB01007F9B1B /* SDWebImageMapKit in Frameworks */,
 				AE50AC5D28A4182D008CC83C /* FirebaseAuth in Frameworks */,
+				AE5BDCCA28B8EB01007F9B1B /* SDWebImage in Frameworks */,
 				AE50AC6128A4182D008CC83C /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,6 +68,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE187E0C28AACA59007379EA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE50AC4928A41734008CC83C /* ViewController.swift */,
+				AE50AC6228A42507008CC83C /* SignInViewController.swift */,
+				AE50AC6428A42511008CC83C /* SignUpViewController.swift */,
+				AE43393328A5A00B00A777CB /* SnapsViewController.swift */,
+				AE43393528A67BAA00A777CB /* CameraViewController.swift */,
+				AE187E0E28AC0B99007379EA /* UsersTableViewController.swift */,
+				AE5BDCC628B810A5007F9B1B /* SnapViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AE187E0D28AACA73007379EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE5BDCC128B6A5E8007F9B1B /* Snap.swift */,
+				AE187E1028AC1060007379EA /* User.swift */,
+				AE50AC6728A52381008CC83C /* MyAlert.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		AE50AC3928A41734008CC83C = {
 			isa = PBXGroup;
 			children = (
@@ -75,15 +111,11 @@
 		AE50AC4428A41734008CC83C /* SnapchatClone */ = {
 			isa = PBXGroup;
 			children = (
-				AE50AC6928A523B0008CC83C /* Utils */,
+				AE187E0D28AACA73007379EA /* Models */,
+				AE187E0C28AACA59007379EA /* ViewControllers */,
 				AE50AC6628A4331D008CC83C /* SnapchatClone.entitlements */,
 				AE50AC4528A41734008CC83C /* AppDelegate.swift */,
 				AE50AC4728A41734008CC83C /* SceneDelegate.swift */,
-				AE50AC4928A41734008CC83C /* ViewController.swift */,
-				AE50AC6228A42507008CC83C /* SignInViewController.swift */,
-				AE50AC6428A42511008CC83C /* SignUpViewController.swift */,
-				AE43393328A5A00B00A777CB /* SnapsViewController.swift */,
-				AE43393528A67BAA00A777CB /* CameraViewController.swift */,
 				AE50AC4B28A41734008CC83C /* Main.storyboard */,
 				AE50AC4E28A41736008CC83C /* Assets.xcassets */,
 				AE50AC5028A41736008CC83C /* LaunchScreen.storyboard */,
@@ -91,14 +123,6 @@
 				AE50AC5928A4179A008CC83C /* GoogleService-Info.plist */,
 			);
 			path = SnapchatClone;
-			sourceTree = "<group>";
-		};
-		AE50AC6928A523B0008CC83C /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				AE50AC6728A52381008CC83C /* MyAlert.swift */,
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +145,8 @@
 				AE50AC5C28A4182D008CC83C /* FirebaseAuth */,
 				AE50AC5E28A4182D008CC83C /* FirebaseDatabase */,
 				AE50AC6028A4182D008CC83C /* FirebaseStorage */,
+				AE5BDCC928B8EB01007F9B1B /* SDWebImage */,
+				AE5BDCCB28B8EB01007F9B1B /* SDWebImageMapKit */,
 			);
 			productName = SnapchatClone;
 			productReference = AE50AC4228A41734008CC83C /* SnapchatClone.app */;
@@ -152,6 +178,7 @@
 			mainGroup = AE50AC3928A41734008CC83C;
 			packageReferences = (
 				AE50AC5B28A4182D008CC83C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				AE5BDCC828B8EB01007F9B1B /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = AE50AC4328A41734008CC83C /* Products */;
 			projectDirPath = "";
@@ -181,13 +208,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE5BDCC728B810A5007F9B1B /* SnapViewController.swift in Sources */,
 				AE43393428A5A00B00A777CB /* SnapsViewController.swift in Sources */,
 				AE50AC6828A52381008CC83C /* MyAlert.swift in Sources */,
+				AE187E0F28AC0B99007379EA /* UsersTableViewController.swift in Sources */,
 				AE50AC6328A42507008CC83C /* SignInViewController.swift in Sources */,
 				AE50AC4A28A41734008CC83C /* ViewController.swift in Sources */,
 				AE50AC4628A41734008CC83C /* AppDelegate.swift in Sources */,
 				AE43393628A67BAA00A777CB /* CameraViewController.swift in Sources */,
 				AE50AC4828A41734008CC83C /* SceneDelegate.swift in Sources */,
+				AE187E1128AC1060007379EA /* User.swift in Sources */,
+				AE5BDCC228B6A5E8007F9B1B /* Snap.swift in Sources */,
 				AE50AC6528A42511008CC83C /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +451,14 @@
 				kind = branch;
 			};
 		};
+		AE5BDCC828B8EB01007F9B1B /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -437,6 +476,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AE50AC5B28A4182D008CC83C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		AE5BDCC928B8EB01007F9B1B /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE5BDCC828B8EB01007F9B1B /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		AE5BDCCB28B8EB01007F9B1B /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE5BDCC828B8EB01007F9B1B /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
